@@ -8,6 +8,17 @@ ResumeLangPage.propTypes = {
   params: PropTypes.object,
 };
 
+export async function generateStaticParams() {
+  return [
+    {
+      lang: 'en',
+    },
+    {
+      land: 'ko',
+    }
+  ];
+}
+
 export default function ResumeLangPage({ params }) {
   const { lang } = params;
   if (lang !== 'en') {
