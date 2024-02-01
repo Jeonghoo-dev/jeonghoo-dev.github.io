@@ -2,8 +2,7 @@ import { Inter } from 'next/font/google';
 import StyledComponentsRegistry from '@/lib/AntdRegistry';
 import { theme } from '@/theme/themeConfig';
 import { ConfigProvider } from 'antd';
-import './globals.css';
-import '/styles/resume.css';
+import '@/app/globals.css';
 
 const inter = Inter({ subsets: [ 'latin' ] });
 

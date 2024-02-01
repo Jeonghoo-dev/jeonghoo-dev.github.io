@@ -1,5 +1,6 @@
 import React from 'react';
 
+import '@/styles/resume.css';
 import { HomeOutlined, LinkedinFilled, MailOutlined, PhoneOutlined } from '@ant-design/icons';
 
 // ResumeEng.propTypes = {
