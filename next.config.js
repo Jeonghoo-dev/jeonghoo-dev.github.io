@@ -9,8 +9,10 @@ const repository = 'jeonghoo.github.io';
 
 const nextConfig = {
   output: 'export',
-  assetPrefix: isProd ? 'https://jeonghoo.site' : '',
+  // assetPrefix: isProd ? 'https://jeonghoo.shop' : '',
   // assetPrefix: !debug ? `/${repository}/` : "",
+  assetPrefix: process.env.NODE_ENV === "production" ? "/" : "",
+  basePath: "",
   reactStrictMode: true,
   trailingSlash: true,
 };
