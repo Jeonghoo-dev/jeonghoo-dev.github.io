@@ -7,7 +7,8 @@ const repository = 'jeonghoo.github.io';
 //     ? 'https://jeonghoo.site'
 //     : '';
 
-const nextConfig = {
+module.exports = {
+// const nextConfig = {
   output: 'export',
   // assetPrefix: isProd ? 'https://jeonghoo.shop' : '',
   // assetPrefix: !debug ? `/${repository}/` : "",
@@ -15,6 +16,14 @@ const nextConfig = {
   basePath: "",
   reactStrictMode: true,
   trailingSlash: true,
+  async rewrites() {
+    return [
+      {
+        source: '/gogh',
+        destination: '/gogh.html',
+      },
+    ];
+  },
 };
 
-module.exports = nextConfig;
+// module.exports = nextConfig;
