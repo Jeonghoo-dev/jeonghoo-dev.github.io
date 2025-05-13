@@ -12,18 +12,10 @@ module.exports = {
   output: 'export',
   // assetPrefix: isProd ? 'https://jeonghoo.shop' : '',
   // assetPrefix: !debug ? `/${repository}/` : "",
-  assetPrefix: process.env.NODE_ENV === "production" ? "/" : "",
-  basePath: "",
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/' : '',
+  basePath: '',
   reactStrictMode: true,
   trailingSlash: true,
-  async rewrites() {
-    return [
-      {
-        source: '/gogh',
-        destination: '/gogh.html',
-      },
-    ];
-  },
 };
 
 // module.exports = nextConfig;
