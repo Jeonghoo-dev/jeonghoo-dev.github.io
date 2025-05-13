@@ -8,6 +8,9 @@ ResumePage.propTypes = {
 
 export default function ResumePage({children}) {
   const highlight = 'profile highlight-blue_background simple-table-header';
+  const encodedLink = encodeURIComponent('https://jeonghoo.github.io');
+  const encodedTitle = encodeURIComponent('Jeonghoo Lee - Resume');
+  const encodedTag = encodeURIComponent('Resume, Artistry');
 
   return (
     <div className={'resume'}>
@@ -16,6 +19,8 @@ export default function ResumePage({children}) {
           <h1 className="page-title">Jeonghoo Lee</h1><p className="page-description"></p>
         </header>
 
+        <a href={ `https://tumblr.com/share/link?url=${encodedLink}&postType=link&title=${encodedTitle}&caption=${encodedTitle}&tags=${encodedTag}` }>onclick</a>
+        <a href={ `https://www.tumblr.com/widgets/share/tool?shareSource=legacy&canonicalUrl=${encodedLink}&title=${encodedTitle}&caption=${encodedTitle}&tags=${encodedTag}&posttype=link` }>onclick2</a>
         <div className="page-body">
           <hr id="1abd38c7-b04d-80e4-aff5-f8a3aea80577"/>
 
